@@ -224,9 +224,6 @@ if len(sektor_pca_bermasalah) > 0:
 
 with st.sidebar:
 
-    st.title("📊 Monthly Tracker")
-
-    st.markdown("---")
 
     # ========================================================
     # MENU
