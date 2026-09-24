@@ -366,6 +366,39 @@ elif halaman == "Monthly Tracker":
         """
     )
 
+    with st.expander("ℹ️ Ketentuan Format Data"):
+        st.markdown (
+            """
+            Seluruh variabel statistik resmi dan Google Trends harus
+            diinput dalam bentuk pertumbuhan *year-on-year* (y-o-y) (%).
+    
+            Pertumbuhan dihitung menggunakan rata-rata nilai selama
+            3 bulan terakhir dan rata-rata pada periode 3 bulan yang
+            sama di tahun sebelumnya.
+            """
+        )
+
+        st.latex(
+            r"""
+            \text{Pertumbuhan y-o-y (\%)} =
+            \frac{
+                \text{Rata-rata 3 bulan saat ini}
+                -
+                \text{Rata-rata 3 bulan tahun sebelumnya}
+            }{
+                \text{Rata-rata 3 bulan tahun sebelumnya}
+            }
+            \times 100\%
+            """
+        )
+
+        st.markdown(
+            """
+            **Contoh:** Untuk periode Maret 2026, gunakan rata-rata
+            Januari–Maret 2026 dan rata-rata Januari–Maret 2025.
+            """
+        )
+
     st.info(
         "Semua variabel (statistik resmi dan Google Trends) harus diisi "
         "dalam bentuk **pertumbuhan y-o-y (%)**, sama seperti data "
