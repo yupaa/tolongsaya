@@ -399,11 +399,6 @@ elif halaman == "Monthly Tracker":
             """
         )
 
-    st.info(
-        "Semua variabel (statistik resmi dan Google Trends) harus diisi "
-        "dalam bentuk **pertumbuhan y-o-y (%)**, sama seperti data "
-        "yang dipakai saat training, bukan nilai mentah."
-    )
 
 
     # Data kosong untuk template
